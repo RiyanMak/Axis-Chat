@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
-
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,10 +15,10 @@ body{
     background: #f7f7f7;
 }
 .wrapper{
-    background:#fff;
+    background: #fff;
     width: 450px;
     border-radius: 16px;
-    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+    box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
                 0 32px 64px -48px rgba(0,0,0,0.5);
 }
 
@@ -31,4 +30,123 @@ body{
     font-weight: 600;
     padding-bottom: 10px;
     border-bottom: 1px solid #e6e6e6;
+}
+.form form{
+    margin: 20px 0;
+}
+.form form .error-txt{
+    color: #721c24;
+    background: #f8d7da;
+    padding: 8px 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #f5c6cb;
+}
+.form form .name-details{
+    display: flex;
+
+}
+form .name-details .field:first-child{
+    margin-right: 10px;
+
+}
+form .name-details .field:last-child{
+    margin-left: 10px;
+    
+}
+.form form .field{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.form form .field label{
+    margin-bottom: 2px;
+}
+.form form .field input{
+    outline: none;
+
+}
+.form form .input input{
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form form .image input{
+    font-size: 17px;
+}
+.form form .button input{
+    margin-top: 13px;
+    height: 45px;
+    border: none;
+    font-size: 17px;
+    font-weight: 400;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form form .field i{
+    position: absolute;
+    right: 15px;
+    color: #ccc;
+    top: 70%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.form .link{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 17px;
+}
+.form .link a{
+    color: #333;
+
+}
+.form .link a:hover{
+    text-decoration: underline;
+}
+
+.users{
+    padding: 25px 30px;
+}
+.users header{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    border-bottom: 1px solid #e6e6e6;
+}
+.wrapper img{
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+.users header .content{
+    display: flex;
+
+}
+.users header .content img {
+    height: 50;
+    width: 50px;
+    
+}
+.users header .details{
+    margin-left: 15px;
+}
+.users header .details span{
+    font-size: 18px;
+    font-weight: 500;
+}
+.users header .logout{
+    color: #fff;
+    font-size: 17px;
+    padding:7px 15px;
+    background: #333;
+    border-radius: 5px;
+    
 }
