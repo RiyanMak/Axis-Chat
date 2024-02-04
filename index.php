@@ -12,8 +12,8 @@
     <div class="wrapper">
         <section class="form signup">
             <header>Axis-Chat App</header>
-            <form action="#" enctype = "multipart/form-data">
-                <div class="error-txt">This is an Error Message!</div>
+            <form action="#" enctype = "multipart/form-data" autocomplete = "off">
+                <div class="error-txt"></div>
                 <div class="name-details">
                     <div class="field input">
                         <label>First Name</label>
