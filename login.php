@@ -12,8 +12,8 @@
     <div class="wrapper">
         <section class="form login ">
             <header>Axis-Chat App</header>
-            <form action="#">
-                <div class="error-txt">This is an Error Message!</div>
+            <form action="#" autocomplete = "off">
+                <div class="error-txt"></div>
                 <div class="field input">
                     <label>Email Address</label>
                     <input type="text" placeholder="Enter your email">
@@ -27,11 +27,12 @@
                     <input type="submit" value="Continue to Chat">
                 </div>
             </form>
-            <div class="link">Not yet signed up? <a href="#">Signup now</a></div>
+            <div class="link">Not yet signed up? <a href="index.php">Signup now</a></div>
         </section>
     </div>
 
     <script src="javascript/pass-show-hide.js"></script>
+    <script src="javascript/login.js"></script>
 
 </body>
 </html>
