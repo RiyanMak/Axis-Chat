@@ -23,9 +23,18 @@
 
                     $extensions = ['png' , 'jpeg', 'jpg'];
                     if(in_array($img_ext,$extensions) === true){
+                        $time = time();
+                        new_img_name = $time.$img_name;
+                        if(move_uploaded_file($tmp_name, "images/".$new_img_name)){
+                            $status = "Active Now";
+                            $random_id = rand(time(), 10000000);
+
+                            $sql2 = mysqli_query($conn,"INSERT INTO users (unique_id,fname,lname,email,password,img,status)
+                                                VALUES ({$random_id}, '{}')");
+                        }
 
                     }else{
-                        
+                        echo "Please select an Image File - jpeg, jpg, png";
                     }
                 }else{
                     echo "Please select an Image File!";
